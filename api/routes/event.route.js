@@ -4,7 +4,7 @@ import { getEvents, createEvent ,updateEvent} from "../controllers/event.control
 const router = express.Router();
 
 router.get("/", getEvents);
-router.post("/", createEvent); //verifyToken as middleware
+router.post("/create", createEvent); //verifyToken as middleware
 router.put("/:id", updateEvent); //verifyToken as middleware
 
 export default router;
